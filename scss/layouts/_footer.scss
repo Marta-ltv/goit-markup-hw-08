@@ -1,0 +1,109 @@
+/*Footer*/
+
+
+
+.footer .mail,
+.footer .phone {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    font-style: normal;
+    text-decoration: none;
+
+    color: rgba(255, 255, 255, 0.6);
+    transition: color var(--cubic-bezier);
+}
+
+.list-footer .mail:hover,
+.list-footer .mail:focus,
+.list-footer .phone:hover,
+.list-footer .phone:focus {
+    color: var(--accent-txt-cl);
+}
+
+.address {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    font-style: normal;
+    text-decoration: none;
+
+    color: var(--white-color);
+}
+
+.list-footer {
+    list-style: none;
+
+    & .item {
+    margin-bottom: 9px;
+    }
+}
+
+.join-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-bottom: 20px;
+
+    color: var(--white-color);
+}
+
+.footer .join-us {
+    display: block;
+    align-items: baseline;
+    margin-left: 70px;
+    margin-right: 0;
+}
+
+.sign-up {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--white-color);
+}
+
+.sign-up-label {
+    width: 358px;
+    height: 50px;
+    margin-right: 12px;
+}
+
+.form-sign-up {
+    display: flex;
+    margin-top: 20px;
+}
+
+.sign-up-input {
+    width: 358px;
+    height: 50px;
+    padding: 15px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    background-color: var(--dark-bg-cl);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    cursor: pointer;
+    transition: border var(--cubic-bezier);
+
+    &:hover,
+    &:focus {
+    border-color: var(--accent-bg-cl);
+    }
+}
+
+.sign-up-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-up-icon {
+    margin-left: 10px;
+    fill: var(--white-bg-cl)
+}

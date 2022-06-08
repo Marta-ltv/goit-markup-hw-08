@@ -1,0 +1,54 @@
+.section {
+    padding: 94px 0;
+}
+
+.section.team {
+    background-color: var(--secondary-bg-color);
+}
+
+.container {
+    display: block;
+    align-items: center;
+
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header__container,
+.navigation__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.hero-container {
+    max-width: 1600px;
+}
+
+
+.container-sign-up {
+    margin-left: 93px;
+}
+
+.portfolio {
+    background-color: var(--main-bg-cl);
+}
+
+footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer {
+    background-color: var(--dark-bg-cl);
+
+}
+
+.footer-container {
+    display: flex;
+    align-items: baseline;
+}

@@ -18,7 +18,13 @@
         "../scss/layouts/_team.scss",
         "../scss/layouts/_customers.scss",
         "../scss/layouts/servives.scss",
-        "../scss/layouts/_footer.scss"
+        "../scss/layouts/_footer.scss",
+        "../scss/mobile/_index.scss",
+        "../scss/mobile/_a.scss",
+        "../scss/mobile/_b.scss",
+        "../scss/tablet/_index.scss",
+        "../scss/tablet/_a.scss",
+        "../scss/tablet/_b.scss"
     ],
     "names": [],
     "file": "main.min.css"

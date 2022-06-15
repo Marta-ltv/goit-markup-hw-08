@@ -1,29 +1,45 @@
 /*Секція Features*/
 
 .feature__list {
+    @include mq(tablet) {
     display: flex;
     flex-wrap: wrap;
-}
-
-.feature__item {
-    width: 270px;
-    list-style: none;
-    margin-right: 30px;
-
-    &:last-child {
-        margin-right: 0;
     }
 }
 
+.feature__item {
+    list-style: none;
+ 
+    @include mq(tablet) {
+    margin-right: 30px;}
+
+    &:last-child {
+    margin-right: 0;
+    }
+
+         @include mq(mobile) {
+             width: 450px;
+         }
+    
+         @include mq(tablet) {
+             display: flex;
+             width: 354px;
+         }
+    
+         @include mq(desktop) {
+             display: flex;
+             width: 270px;
+         }
+}
+
 .feature-block {
-    display: flex;
-    width: 270px;
-    height: 120px;
+
     align-items: center;
     justify-content: center;
     background-color: var(--secondary-bg-color);
     background-position: center;
     margin-bottom: 30px;
+
 }
 
 .feature__title {

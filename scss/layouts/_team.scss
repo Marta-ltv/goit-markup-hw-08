@@ -1,109 +1,113 @@
 /*Секція команда*/
 
 .team-member__title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
-    margin-bottom: 50px;
+  font-weight: 700;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
 
-    color: var(--main-txt-cl);
+  color: var(--main-txt-cl);
+
+  @include mq(mobile) {
+    font-size: 28px;
+  }
+
+  @include mq(desktop) {
+    font-size: 36px;
+  }
 }
 
 .team-member__list {
-
-    @include mq(tablet) {
+  @include mq(tablet) {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    flex-basis: calc((100%-3*30px)/4);
-    }
-    
+    flex-basis: calc((100%-3 * 30px) / 4);
+  }
 }
 
 .team-member__item {
-
-    @include mq(mobile) {
+  @include mq(mobile) {
     margin-bottom: 30px;
-    }
+  }
 
-    @include mq(tablet) {
+  @include mq(tablet-only) {
     margin-right: 30px;
 
     &:nth-child(2n) {
-        margin-right: 0;
+      margin-right: 0;
     }
-    }
+  }
 
-    @include mq(desktop) {
+  @include mq(desktop) {
     margin-right: 30px;
-    }
+  }
 
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-    background-color: var(--white-bg-cl);
-    list-style: none;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background-color: var(--white-bg-cl);
+  list-style: none;
 
-   
-    &:last-child {
-        margin-right: 0px;
-    }
+  &:last-child {
+    margin-right: 0px;
+  }
 
-@include mq(mobile) {
+  @include mq(mobile) {
     width: 450px;
-}
+  }
 
-@include mq(tablet) {
+  @include mq(tablet) {
     width: 354px;
-}
+  }
 
-    @include mq(desktop) {
-         width: 270px;}
+  @include mq(desktop) {
+    width: 270px;
+  }
 }
 
 .member {
-    padding-bottom: 30px;
-    padding-top: 30px;
+  padding-bottom: 30px;
+  padding-top: 30px;
 }
 
 .team-member__img {
-    display: block;
-    height: auto;
+  display: block;
+  height: auto;
 
-    @include mq(mobile) {
-        width: 450px;
-    }
+  @include mq(mobile) {
+    width: 450px;
+  }
 
-    @include mq(tablet) {
-     width: 354px;
-         }
+  @include mq(tablet) {
+    width: 354px;
+  }
 
-                                   @include mq(desktop) {
-                                       width: 270px;
-                                   }
+  @include mq(desktop) {
+    width: 270px;
+  }
 }
 
 .member__name {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
-    text-align: center;
-    letter-spacing: 0.03em;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
 
-    color: var(--main-txt-cl);
+  color: var(--main-txt-cl);
 
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .member__position {
-    font-size: 16px;
-    line-height: 1.19;
-    text-align: center;
-    letter-spacing: 0.03em;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
 
-    color: var(--secondary-txt-cl);
+  color: var(--secondary-txt-cl);
 
-    margin-bottom: 16px;
+  margin-bottom: 16px;
 }

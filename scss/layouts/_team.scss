@@ -12,8 +12,14 @@
 }
 
 .team-member__list {
-    display: flex;
+
+    @include mq(tablet) {
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: calc((100%-3*30px)/4);
+    }
+    
 }
 
 .team-member__item {
@@ -25,8 +31,9 @@
     background-color: var(--white-bg-cl);
     list-style: none;
 
-    &:last-child {
-    margin-right: 0;
+   
+    &:nth-child(2n) {
+        margin-right: 0px;
     }
 }
 

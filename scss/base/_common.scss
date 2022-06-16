@@ -14,11 +14,21 @@
     }
 }
 
+.section.product {
+    display: none;
+
+@include mq(desktop) {
+        display: block;
+}
+
 
 .section.team {
     background-color: var(--secondary-bg-color);
 }
 
+
+    
+}
 .container {
     padding-left: 15px;
     padding-right: 15px;

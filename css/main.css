@@ -76,7 +76,17 @@ ul {
   }
 }
 
-.section.team {
+.section.product {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .section.product {
+    display: block;
+  }
+}
+
+.section.product .section.team {
   background-color: var(--secondary-bg-color);
 }
 
@@ -867,6 +877,10 @@ footer {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 -15px;
   }
 }
 
@@ -876,18 +890,41 @@ footer {
 
 @media screen and (min-width: 768px) {
   .feature__item {
-    display: block;
     margin-right: 30px;
+  }
+  .feature__item:nth-child(2n) {
+    margin-right: 0px;
   }
 }
 
-.feature__item:last-child {
-  margin-right: 0;
+@media screen and (min-width: 480px) {
+  .feature__item {
+    width: 450px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .feature__item {
+    width: 354px;
+    -ms-flex-preferred-size: calc((100% - 2 * 30px) / 2);
+        flex-basis: calc((100% - 2 * 30px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .feature__item {
+    width: 270px;
+    -ms-flex-preferred-size: calc((100% - 3 * 30px) / 4);
+        flex-basis: calc((100% - 3 * 30px) / 4);
+    margin-bottom: 0;
+  }
 }
 
 .feature-block {
-  width: 270px;
-  height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -905,7 +942,19 @@ footer {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
   color: var(--main-txt-cl);
+}
+
+@media screen and (max-width: 767.98px) {
+  .feature__title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .feature__description {
@@ -992,11 +1041,17 @@ footer {
   color: var(--main-txt-cl);
 }
 
-.team-member__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  list-style: none;
+@media screen and (min-width: 768px) {
+  .team-member__list {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-preferred-size: calc((100%-3*30px)/4);
+        flex-basis: calc((100%-3*30px)/4);
+  }
 }
 
 .team-member__item {
@@ -1009,8 +1064,8 @@ footer {
   list-style: none;
 }
 
-.team-member__item:last-child {
-  margin-right: 0;
+.team-member__item:nth-child(2n) {
+  margin-right: 0px;
 }
 
 .member {

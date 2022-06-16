@@ -1,16 +1,14 @@
 .section {
-        padding-top: 60px;
-        padding-bottom: 60px;
-    
-
+    @include mq(mobile) {
+     padding-top: 60px;
+    }
+       
     @include mq(tablet) {
         padding-top: 60px;
-        padding-bottom: 60px;
     }
 
     @include mq(desktop) {
-        padding-top: 94px;
-        padding-bottom: 94px;
+    padding-top: 94px;
     }
 }
 
@@ -18,15 +16,13 @@
     display: none;
 
 @include mq(desktop) {
-        display: block;
+    display: block;
 }
 
 
 .section.team {
     background-color: var(--secondary-bg-color);
 }
-
-
     
 }
 .container {

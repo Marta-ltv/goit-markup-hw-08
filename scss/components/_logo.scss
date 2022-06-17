@@ -1,32 +1,30 @@
 /*Логотип*/
 
 .logo {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    font-style: normal;
-    text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  font-style: normal;
+  text-decoration: none;
 
-    @include mq(mobile) {
+  margin-right: 94px;
+
+  @include mq(mobile) {
     font-size: 24px;
-    }
+  }
 
-    @include mq(desktop) {
+  @include mq(desktop) {
     font-size: 26px;
-    }
+  }
 
-    //margin-right: 94px;
-
-    color: var(--accent-txt-cl);
+  color: var(--accent-txt-cl);
 }
 
 .logo__black {
-    color: var(--black-color);
+  color: var(--black-color);
 }
 
 .studio-white {
-    color: var(--white-color);
+  color: var(--white-color);
 }
-
-

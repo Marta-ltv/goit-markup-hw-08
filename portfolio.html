@@ -290,6 +290,7 @@
     </main>
 
     <!--Підвал сайту-->
+  
     <footer class="footer">
       <div class="container footer-container">
         <div class="footer-block">
@@ -349,7 +350,27 @@
             </li>
           </ul>
         </div>
+
+        <div class="container-sign-up">
+          <b class="sign-up">Подпишитесь на рассылку</b>
+          <form class="form-sign-up" name="form-sign-up" autocomplete="off">
+           <label class="sign-up-label">
+             <input class="sign-up-input" type="email" name="sign-up-email" placeholder="E-mail"/>
+           </label>
+        
+           <button class="btn__studio" type="submit">
+             <span class="sign-up-btn">Подписаться
+            <svg class="sign-up-icon" width="24px" height="24px">
+              <use href="./images/icon.svg/modal-icon.svg#icon-icon-send"></use>
+            </svg>
+            </span>
+           </button>
+          </form>
+
+        </div>
+
       </div>
     </footer>
+    
   </body>
 </html>

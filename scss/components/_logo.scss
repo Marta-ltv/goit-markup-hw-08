@@ -3,13 +3,20 @@
 .logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
     font-style: normal;
     text-decoration: none;
 
-    margin-right: 94px;
+    @include mq(mobile) {
+    font-size: 24px;
+    }
+
+    @include mq(desktop) {
+    font-size: 26px;
+    }
+
+    //margin-right: 94px;
 
     color: var(--accent-txt-cl);
 }
@@ -22,7 +29,4 @@
     color: var(--white-color);
 }
 
-.footer-logo {
-    display: block;
-    margin-bottom: 20px;
-}
+

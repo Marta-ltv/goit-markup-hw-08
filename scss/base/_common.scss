@@ -1,95 +1,78 @@
 .section.team {
-    background-color: var(--secondary-bg-color);
+  background-color: var(--secondary-bg-color);
 }
 
 .section {
-    @include mq(mobile) {
-     padding-top: 60px;
-    }
-       
-    @include mq(tablet) {
-        padding-top: 60px;
-    }
+  @include mq(mobile) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 
-    @include mq(desktop) {
+  @include mq(tablet) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @include mq(desktop) {
     padding-top: 94px;
-    }
+    padding-bottom: 94px;
+  }
 }
 
 .section.product {
-    display: none;
+  display: none;
 
-@include mq(desktop) {
+  @include mq(desktop) {
     display: block;
-}
-    
+  }
 }
 .container {
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 
-@media screen and (min-width: 480px) {
+  @media screen and (min-width: 480px) {
     width: 480px;
-}
+  }
 
-@include mq(mobile) {
+  @include mq(mobile) {
     width: 480px;
-}
+  }
 
-@media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     width: 768px;
-}
+  }
 
-@include mq(tablet) {
+  @include mq(tablet) {
     width: 768px;
-}
+  }
 
-@media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     width: 1200px;
-}
+  }
 
-@include mq(desktop) {
+  @include mq(desktop) {
     width: 1200px;
-}
+  }
 
-    //display: block;
-    //align-items: center;
 }
 
 .header__container,
 .navigation__container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
 
 .hero-container {
-    max-width: 1600px;
+  max-width: 1600px;
 }
 
 
-.container-sign-up {
-    margin-left: 93px;
-}
 
 .portfolio {
-    background-color: var(--main-bg-cl);
+  background-color: var(--main-bg-cl);
 }
 
-footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
 
-.footer {
-    background-color: var(--dark-bg-cl);
-
-}
-
-.footer-container {
-    display: flex;
-    align-items: baseline;
-}

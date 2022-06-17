@@ -1,109 +1,200 @@
 /*Footer*/
 
+footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 
+.footer {
+  background-color: var(--dark-bg-cl);
+}
+
+.footer-container {
+  @include mq(tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+  }
+
+  @include mq(desktop) {
+    flex-wrap: nowrap;
+    justify-content: left;
+  }
+}
 
 .footer .mail,
 .footer .phone {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    font-style: normal;
-    text-decoration: none;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  font-style: normal;
+  text-decoration: none;
 
-    color: rgba(255, 255, 255, 0.6);
-    transition: color var(--cubic-bezier);
+  color: rgba(255, 255, 255, 0.6);
+  transition: color var(--cubic-bezier);
 }
 
 .list-footer .mail:hover,
 .list-footer .mail:focus,
 .list-footer .phone:hover,
 .list-footer .phone:focus {
-    color: var(--accent-txt-cl);
+  color: var(--accent-txt-cl);
 }
 
 .address {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    font-style: normal;
-    text-decoration: none;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  font-style: normal;
+  text-decoration: none;
 
-    color: var(--white-color);
+  color: var(--white-color);
 }
 
 .list-footer {
-    list-style: none;
+  list-style: none;
 
-    & .item {
+  & .item {
     margin-bottom: 9px;
-    }
+  }
+}
+
+.footer-block {
+  @include mq(mobile-only) {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  @include mq(tablet-only) {
+    width: 232px;
+    margin-right: 165px;
+    text-align: center;
+  }
+
+  @include mq(desktop) {
+    text-align: left;
+    margin-right: 70px;
+  }
+}
+
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 20px;
 }
 
 .join-title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    text-decoration: none;
-    margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-bottom: 20px;
 
-    color: var(--white-color);
+  @include mq(mobile) {
+  text-align: center;
+  }
+   @include mq(desktop) {
+       text-align: left;
+   }
+
+  color: var(--white-color);
 }
 
 .footer .join-us {
-    display: block;
-    align-items: baseline;
-    margin-left: 70px;
-    margin-right: 0;
+  @include mq(mobile-only) {
+    margin-bottom: 60px;
+  }
+
+  @include mq(desktop) {
+    text-align: left;
+  }
+}
+
+.container-sign-up {
+  width: 100%;
+  text-align: center;
+  margin-top: 60px;
+
+  @include mq(desktop) {
+    width: auto;
+    margin-left: auto;
+    text-align: left;
+    margin-top: 0;
+  }
 }
 
 .sign-up {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 
-    color: var(--white-color);
+  color: var(--white-color);
 }
 
 .sign-up-label {
+  @include mq(desktop) {
     width: 358px;
     height: 50px;
     margin-right: 12px;
+  }
 }
 
 .form-sign-up {
+  @include mq(desktop) {
     display: flex;
+    align-items: baseline;
     margin-top: 20px;
+  }
 }
 
 .sign-up-input {
+  @include mq(mobile) {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  @include mq(tablet) {
+    width: 450px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  @include mq(desktop) {
     width: 358px;
-    height: 50px;
-    padding: 15px 16px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin-right: 12px;
+    margin-left: 0;
+  }
 
-    background-color: var(--dark-bg-cl);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-    cursor: pointer;
-    transition: border var(--cubic-bezier);
+  height: 50px;
+  padding: 15px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
 
-    &:hover,
-    &:focus {
+  background-color: var(--dark-bg-cl);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  cursor: pointer;
+  transition: border var(--cubic-bezier);
+
+  &:hover,
+  &:focus {
     border-color: var(--accent-bg-cl);
-    }
+  }
 }
 
 .sign-up-btn {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
 }
 
 .sign-up-icon {
-    margin-left: 10px;
-    fill: var(--white-bg-cl)
+  margin-left: 10px;
+  fill: var(--white-bg-cl);
 }

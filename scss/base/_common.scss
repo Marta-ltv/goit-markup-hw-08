@@ -1,3 +1,7 @@
+.section.team {
+    background-color: var(--secondary-bg-color);
+}
+
 .section {
     @include mq(mobile) {
      padding-top: 60px;
@@ -17,11 +21,6 @@
 
 @include mq(desktop) {
     display: block;
-}
-
-
-.section.team {
-    background-color: var(--secondary-bg-color);
 }
     
 }

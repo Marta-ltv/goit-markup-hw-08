@@ -341,7 +341,6 @@ ul {
   letter-spacing: 0.03em;
   font-style: normal;
   text-decoration: none;
-  margin-right: 94px;
   color: var(--accent-txt-cl);
 }
 
@@ -351,9 +350,16 @@ ul {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-right: 94px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .logo {
     font-size: 26px;
+    margin-right: 94px;
   }
 }
 
@@ -363,6 +369,10 @@ ul {
 
 .studio-white {
   color: var(--white-color);
+}
+
+.footer-logo {
+  margin-right: 0;
 }
 
 /*Модальне вікно*/
@@ -678,6 +688,12 @@ ul {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .header {
+    height: 85px;
+  }
+}
+
 @media screen and (max-width: 767.98px) {
   .navigation {
     display: none;
@@ -792,7 +808,6 @@ ul {
 
 .list .mail {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   font-style: normal;
@@ -803,6 +818,18 @@ ul {
   color: var(--secondary-txt-cl);
   -webkit-transition: color var(--cubic-bezier);
   transition: color var(--cubic-bezier);
+}
+
+@media screen and (min-width: 768px) {
+  .list .mail {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .list .mail {
+    font-size: 14px;
+  }
 }
 
 .list .mail:hover, .list .mail:focus {
@@ -842,6 +869,13 @@ ul {
   fill: currentColor;
 }
 
+@media screen and (min-width: 768px) {
+  .icon-envelope {
+    width: 14px;
+    height: 10px;
+  }
+}
+
 .icon-phone {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -854,6 +888,13 @@ ul {
           justify-content: center;
   margin-right: 10px;
   fill: currentColor;
+}
+
+@media screen and (min-width: 768px) {
+  .icon-phone {
+    width: 10px;
+    height: 14px;
+  }
 }
 
 .navigation__link--active {

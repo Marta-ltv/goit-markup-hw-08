@@ -8,14 +8,17 @@
   font-style: normal;
   text-decoration: none;
 
-  margin-right: 94px;
-
   @include mq(mobile) {
     font-size: 24px;
   }
 
+  @include mq(tablet) {
+    margin-right: 94px;
+  }
+
   @include mq(desktop) {
     font-size: 26px;
+    margin-right: 94px;
   }
 
   color: var(--accent-txt-cl);
@@ -27,4 +30,8 @@
 
 .studio-white {
   color: var(--white-color);
+}
+
+.footer-logo {
+  margin-right: 0;
 }

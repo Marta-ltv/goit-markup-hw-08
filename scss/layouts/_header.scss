@@ -6,6 +6,10 @@
     margin-left: 15px;
   }
 
+  @include mq(tablet-only) {
+      height: 85px;
+  }
+
   background-color: var(--white-bg-cl);
   border-bottom: 1px solid var(--border-cl);
 }
@@ -98,8 +102,15 @@
 }
 
 .list .mail {
+  @include mq(tablet) {
+    font-size: 12px;
+  }
+
+  @include mq(desktop) {
+    font-size: 14px;
+  }
+
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   font-style: normal;
@@ -137,6 +148,11 @@
   justify-content: center;
   margin-right: 10px;
   fill: currentColor;
+
+@include mq(tablet) {
+        width: 14px;
+        height: 10px;
+    }
 }
 
 .icon-phone {
@@ -145,6 +161,11 @@
   justify-content: center;
   margin-right: 10px;
   fill: currentColor;
+
+@include mq(tablet) {
+        width: 10px;
+        height: 14px;
+    }
 }
 
 .navigation__link--active {

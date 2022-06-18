@@ -1,5 +1,7 @@
 /*Portfolio*/
 .services {
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
   align-items: center;
   justify-content: center;
@@ -9,9 +11,7 @@
     flex-wrap: wrap;
     margin: -15px;
     }
-@include mq(desktop) {
-    
-}
+
 }
 
 .services-title {

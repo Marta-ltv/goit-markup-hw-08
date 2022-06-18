@@ -2,12 +2,16 @@
 .services {
   list-style: none;
   align-items: center;
+  justify-content: center;
 
   @include mq(tablet) {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
     }
+@include mq(desktop) {
+    
+}
 }
 
 .services-title {

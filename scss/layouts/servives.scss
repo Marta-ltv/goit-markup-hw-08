@@ -1,9 +1,13 @@
 /*Portfolio*/
 .services {
-  display: flex;
   list-style: none;
+  display: flex;
   align-items: center;
   justify-content: center;
+
+  @include mq(mobile-only) {
+      flex-direction: column;
+    }
 
   @include mq(tablet) {
     display: flex;

@@ -83,7 +83,7 @@
   }
 
   @include mq(desktop) {
-    flex-basis: calc((100% - 3 * 15px) / 2);
+    flex-basis: calc((100% - 3 * 30px) / 3);
     margin-right: 15px;
     margin-bottom: 30px;
 

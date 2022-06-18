@@ -1576,6 +1576,7 @@ ul {
 .product-overlay {
   position: relative;
   overflow: hidden;
+  width: 450px;
 }
 
 /*Footer*/

@@ -7,7 +7,6 @@
 
   @include mq(tablet) {
     flex-wrap: wrap;
-    min-height: 400px;
     margin: -15px;
     }
 }
@@ -61,6 +60,8 @@
 }
 
 .services-item {
+
+  display: flex;
   @include mq(mobile-only) {
     width: 100%;
 

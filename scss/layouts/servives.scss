@@ -1,11 +1,10 @@
 /*Portfolio*/
 .services {
   list-style: none;
-  display: flex;
-  justify-content: center;
   align-items: center;
 
   @include mq(tablet) {
+    display: flex;
     flex-wrap: wrap;
     margin: -15px;
     }
@@ -42,14 +41,16 @@
   text-decoration: none;
   transition: box-shadow var(--cubic-bezier);
 
+  display: flex;
+  flex-direction: column;
+
   @include mq(mobile-only) {
-    display: flex;
-    flex-direction: column;
     width: 100%;
   }
 
   @include mq(desktop) {
     display: block;
+    flex-grow: 1;
   }
 
   &:hover,
@@ -60,8 +61,7 @@
 }
 
 .services-item {
-
-  display: flex;
+  
   @include mq(mobile-only) {
     width: 100%;
 
@@ -135,4 +135,5 @@
 .product-overlay {
   position: relative;
   overflow: hidden;
+  width: 450px;
 }

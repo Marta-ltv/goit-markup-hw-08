@@ -58,7 +58,13 @@
 
 }
 
-.header__container,
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
 .navigation__container {
   display: flex;
   align-items: center;
@@ -68,8 +74,6 @@
 .hero-container {
   max-width: 1600px;
 }
-
-
 
 .portfolio {
   background-color: var(--main-bg-cl);

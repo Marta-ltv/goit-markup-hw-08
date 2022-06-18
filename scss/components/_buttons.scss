@@ -69,6 +69,10 @@
 
   @include mq(mobile-only) {
     margin-bottom: 15px;
+
+    &:nth-last-child(-n+2) {
+      margin-bottom: 0;
+    }
   }
 }
 

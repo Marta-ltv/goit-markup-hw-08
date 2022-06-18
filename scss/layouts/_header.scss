@@ -1,11 +1,7 @@
 /* секція header */
 
 .header {
-  @include mq(mobile-only) {
-    padding: 16px;
-    margin-left: 15px;
-  }
-
+  
   @include mq(tablet-only) {
       height: 85px;
   }

@@ -63,12 +63,22 @@
   align-items: center;
   justify-content: center;
 
+  @include mq(mobile-only) {
+      display: flex;
+      justify-content: space-between;
+
+    }
 }
 
 .navigation__container {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @include mq(mobile-only) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .hero-container {
@@ -79,4 +89,6 @@
   background-color: var(--main-bg-cl);
 }
 
-
+.header {
+  position: relative;
+}

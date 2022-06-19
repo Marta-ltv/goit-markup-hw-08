@@ -147,6 +147,17 @@ ul {
           justify-content: center;
 }
 
+@media screen and (max-width: 767.98px) {
+  .header__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 .navigation__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -159,12 +170,27 @@ ul {
           justify-content: center;
 }
 
+@media screen and (max-width: 767.98px) {
+  .navigation__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 .hero-container {
   max-width: 1600px;
 }
 
 .portfolio {
   background-color: var(--main-bg-cl);
+}
+
+.header {
+  position: relative;
 }
 
 /* Button */
@@ -252,7 +278,7 @@ ul {
   .nav-btn__item {
     margin-bottom: 15px;
   }
-  .nav-btn__item:nth-last-child(-n+2) {
+  .nav-btn__item:nth-last-child(-n + 2) {
     margin-bottom: 0;
   }
 }
@@ -385,8 +411,8 @@ ul {
 @media screen and (min-width: 480px) {
   .logo {
     font-size: 24px;
-    padding: 16px;
-    margin-left: 15px;
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 }
 
@@ -949,6 +975,51 @@ ul {
   left: 0;
   bottom: 0;
   background-color: var(--accent-bg-cl);
+}
+
+.menu-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+}
+
+.menu-button .icon-cross {
+  display: none;
+}
+
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
+.menu-container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 796px;
+  z-index: 9;
+  border-color: var(--white-bg-cl);
+}
+
+@media screen and (max-width: 767.98px) {
+  .menu-container.is-open {
+    display: block;
+  }
 }
 
 /*Секція герой*/

@@ -61,10 +61,44 @@
           </li>
         </ul>
 
-<button class="close-button">
-  
-</button>
+        <button type="button" class="menu-button is-open" aria-expanded="false" data-menu-button>
+          <svg width="40px" height="40px" aria-label="Переключетель мобильного меню">
+            <use
+              class="icon-cross"
+              href="./images/icon.svg/close-menu-40.svg#icon-close_40px"
+            ></use>
+            <use class="menu" href="./images/icon.svg/close-menu-40.svg#icon-menu_40px"></use>
+          </svg>
+        </button>
+      </div>
 
+      <div class="menu-container">
+        <nav class="menu-content">
+          <ul class="menu-content__list">
+            <li class="menu-content__item">
+              <a class="menu-content menu-content__link--active" href="#">Студия</a>
+            </li>
+            <li class="menu-content__item">
+              <a class="menu-content__link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="menu-content__item">
+              <a class="menu-content__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="menu-contacts">
+          <li class="menu-contacts__list">
+            <a class="menu-contacts__mail" href="mailto:info@devstudio.com">
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="menu-contacts__list">
+            <a class="menu-contacts__phone" href="tel:380961111111">
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
       </div>
     </header>
 
@@ -90,7 +124,6 @@
               <button class="nav__btn" type="button">Маркетинг</button>
             </li>
           </ul>
-
 
           <ul class="services">
             <li class="services-item">
@@ -291,14 +324,12 @@
               </a>
             </li>
           </ul>
-
-
         </div>
       </section>
     </main>
 
     <!--Підвал сайту-->
-  
+
     <footer class="footer">
       <div class="container footer-container">
         <div class="footer-block">
@@ -362,23 +393,23 @@
         <div class="container-sign-up">
           <b class="sign-up">Подпишитесь на рассылку</b>
           <form class="form-sign-up" name="form-sign-up" autocomplete="off">
-           <label class="sign-up-label">
-             <input class="sign-up-input" type="email" name="sign-up-email" placeholder="E-mail"/>
-           </label>
-        
-           <button class="btn__studio" type="submit">
-             <span class="sign-up-btn">Подписаться
-            <svg class="sign-up-icon" width="24px" height="24px">
-              <use href="./images/icon.svg/modal-icon.svg#icon-icon-send"></use>
-            </svg>
-            </span>
-           </button>
+            <label class="sign-up-label">
+              <input class="sign-up-input" type="email" name="sign-up-email" placeholder="E-mail" />
+            </label>
+
+            <button class="btn__studio" type="submit">
+              <span class="sign-up-btn"
+                >Подписаться
+                <svg class="sign-up-icon" width="24px" height="24px">
+                  <use href="./images/icon.svg/modal-icon.svg#icon-icon-send"></use>
+                </svg>
+              </span>
+            </button>
           </form>
-
         </div>
-
       </div>
     </footer>
-    
+
+    <script src="./js/menu.js"></script>
   </body>
 </html>

@@ -75,6 +75,7 @@
 .team-member__img {
   display: block;
   height: auto;
+  width: 100%;
 
   @include mq(mobile) {
     width: 450px;

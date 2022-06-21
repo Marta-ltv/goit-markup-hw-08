@@ -74,7 +74,7 @@
       <div class="cotainer menu-container" id="menu-container" data-menu>
           <ul class="menu-content">
             <li class="menu-content__list">
-              <a class="menu-content menu-content__link--active" href="./index.html">Студия</a>
+              <a class="menu-content menu-content__link--active" href="#">Студия</a>
             </li>
             <li class="menu-content__list">
               <a class="menu-content__link" href="./portfolio.html">Портфолио</a>
@@ -269,21 +269,25 @@
           <h2 class="product__title">Чем мы занимаемся</h2>
           <ul class="product__list">
             <li class="product__card">
-              <img class="product__img" src="./images/product/img-1.jpg" alt="Ноутбуки" width="370" />
+              <img class="product__img" 
+              srcset="./images/product/img-1_lg.jpg 1x, ./images/product/img-1_lg@2x.jpg 2x"
+              src="./images/product/img-1_lg.jpg" alt="Ноутбуки" width="370" loading="lazy"/>
               <div class="product__block">
                 <p class="product__label">Десктопные приложения</p>
               </div>
             </li>
 
             <li class="product__card">
-              <img class="product__img" src="./images/product/img-2.jpg" alt="Телефони" width="370" />
+              <img class="product__img" srcset="./images/product/img-2_lg.jpg 1x, ./images/product/img-2_lg@2x.jpg 2x"
+              src="./images/product/img-2_lg.jpg" alt="Телефони" width="370" loading="lazy"/>
               <div class="product__block">
                 <p class="product__label">Мобильные приложения</p>
               </div>
             </li>
 
             <li class="product__card">
-              <img class="product__img" src="./images/product/img-3.jpg" alt="Планшети" width="370" />
+              <img class="product__img" srcset="./images/product/img-3_lg.jpg 1x, ./images/product/img-3_lg@2x.jpg 2x"
+              src="./images/product/img-3_lg.jpg" alt="Планшети" width="370" loading="lazy"/>
               <div class="product__block">
                 <p class="product__label">Дизайнерские решения</p>
               </div>
@@ -304,9 +308,11 @@
             <li class="team-member__item">
               <img
                 class="team-member__img"
-                src="./images/command/member-1.jpg"
+                srcset="./images/command/member-1_sm.jpg 1x, ./images/command/member-1_sm@2x.jpg 2x"
+                src="./images/command/member-1_sm.jpg"
                 alt="Игорь Демьяненко"
-                width="270"
+                width="450"
+                loading="lazy"
               />
               <div class="member">
                 <h3 class="member__name">Игорь Демьяненко</h3>
@@ -351,9 +357,11 @@
             <li class="team-member__item">
               <img
                 class="team-member__img"
-                src="./images/command/member-2.jpg"
+                srcset="./images/command/member-2_sm.jpg 1x, ./images/command/member-2_sm@2x.jpg 2x"
+                src="./images/command/member-2_sm.jpg"
                 alt="Ольга Репина"
-                width="270"
+                width="450"
+                loading="lazy"
               />
               <div class="member">
                 <h3 class="member__name">Ольга Репина</h3>
@@ -397,9 +405,11 @@
             <li class="team-member__item">
               <img
                 class="team-member__img"
-                src="./images/command/member-3.jpg"
+                srcset="./images/command/member-3_sm.jpg 1x, ./images/command/member-3_sm@2x.jpg 2x"
+                src="./images/command/member-3_sm.jpg"
                 alt="Николай Тарасов"
-                width="270"
+                width="450"
+                loading="lazy"
               />
               <div class="member">
                 <h3 class="member__name">Николай Тарасов</h3>
@@ -443,9 +453,11 @@
             <li class="team-member__item">
               <img
                 class="team-member__img"
-                src="./images/command/member-4.jpg"
+                srcset="./images/command/member-4_sm.jpg 1x, ./images/command/member-4_sm@2x.jpg 2x"
+                src="./images/command/member-4_sm.jpg"
                 alt="Михаил Ермаков"
-                width="270"
+                width="450"
+                loading="lazy"
               />
               <div class="member">
                 <h3 class="member__name">Михаил Ермаков</h3>

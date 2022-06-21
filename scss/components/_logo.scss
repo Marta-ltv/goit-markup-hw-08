@@ -35,6 +35,8 @@
   color: var(--white-color);
 }
 
-.footer-logo {
-  margin-right: 0;
+@include mq(tablet-only) {
+.logo-footer {
+  padding-left: 115px;
+}
 }

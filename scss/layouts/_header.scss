@@ -17,6 +17,7 @@
   }
 }
 
+
 .navigation__list {
   display: flex;
   list-style: none;
@@ -183,5 +184,13 @@
     left: 0;
     bottom: 0;
     background-color: var(--accent-bg-cl);
+  }
+}
+
+
+
+.menu-button.is-open .navigation__container .logo {
+  @include mq(mobile-only) {
+    display: none;
   }
 }

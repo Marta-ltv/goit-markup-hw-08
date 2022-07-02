@@ -990,6 +990,12 @@ ul {
   background-color: var(--accent-bg-cl);
 }
 
+@media screen and (max-width: 767.98px) {
+  .menu-button.is-open .navigation__container .logo {
+    display: none;
+  }
+}
+
 .menu-button {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -1006,6 +1012,12 @@ ul {
 
 .menu-button.is-open .icon-cross {
   display: block;
+}
+
+@media screen and (max-width: 767.98px) {
+  .menu-button.is-open .icon-cross {
+    position: relative;
+  }
 }
 
 .menu-button.is-open .icon-menu {
@@ -1025,19 +1037,17 @@ ul {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 2;
+  z-index: 8;
   padding: 48px 40px;
 }
 
 @media screen and (max-width: 767.98px) {
   .menu-container.is-open {
     display: block;
-    width: 480px;
+    width: 100vw;
     height: 796px;
+    z-index: 9;
     background-color: var(--white-bg-cl);
-  }
-  .menu-container.is-open .logo {
-    z-index: 2;
   }
 }
 

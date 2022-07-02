@@ -25,9 +25,12 @@
  }
   @include mq(mobile) {
     width: 450px;
+  &:not(:last-child) {
     margin-bottom: 30px;
   }
+  }
 
+    
 
   @include mq(desktop) {
     width: 270px;

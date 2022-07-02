@@ -79,10 +79,6 @@ footer {
   }
 }
 
-.footer-logo {
-  display: inline-block;
-  margin-bottom: 20px;
-}
 
 .join-title {
   font-weight: 700;
@@ -92,7 +88,7 @@ footer {
   text-transform: uppercase;
   text-decoration: none;
   margin-bottom: 20px;
-
+  
   @include mq(mobile) {
   text-align: center;
   }
@@ -198,3 +194,5 @@ footer {
   margin-left: 10px;
   fill: var(--white-bg-cl);
 }
+
+

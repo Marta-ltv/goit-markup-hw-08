@@ -13,8 +13,10 @@
 .navigation {
   @include mq(mobile-only) {
     display: none;
+    margin-left: 88px;
   }
 }
+
 
 .navigation__list {
   display: flex;

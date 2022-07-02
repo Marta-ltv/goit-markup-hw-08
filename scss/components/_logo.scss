@@ -15,10 +15,11 @@
   }
 
   @include mq(tablet-only) {
-    padding-right: 80px;
+   
     padding-top: 26px;
     padding-bottom: 26px;
   }
+
   @include mq(desktop) {
     font-size: 26px;
     margin-right: 94px;
@@ -37,6 +38,13 @@
 
 @include mq(tablet-only) {
 .logo-footer {
-  padding-left: 115px;
+  margin-left: 115px;
+  text-align: center;
 }
+}
+
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 20px;
+
 }

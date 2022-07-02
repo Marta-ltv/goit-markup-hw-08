@@ -440,8 +440,14 @@ ul {
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .logo-footer {
-    padding-left: 115px;
+    margin-left: 115px;
+    text-align: center;
   }
+}
+
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 20px;
 }
 
 /*Модальне вікно*/
@@ -769,6 +775,12 @@ ul {
   list-style: none;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .navigation__list {
+    margin-left: 88px;
+  }
+}
+
 .navigation__item {
   margin-right: 50px;
 }
@@ -1025,7 +1037,7 @@ ul {
     background-color: var(--white-bg-cl);
   }
   .menu-container.is-open .logo {
-    z-index: 1;
+    z-index: 2;
   }
 }
 
@@ -1223,16 +1235,18 @@ ul {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199.98px) {
-  .feature__item:nth-child(2n) {
-    margin-right: 0px;
+@media screen and (max-width: 767.98px) {
+  .feature__item {
+    width: 450px;
+  }
+  .feature__item:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 
-@media screen and (min-width: 480px) {
-  .feature__item {
-    width: 450px;
-    margin-bottom: 30px;
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .feature__item:nth-child(2n) {
+    margin-right: 0px;
   }
 }
 
@@ -1396,8 +1410,8 @@ ul {
   list-style: none;
 }
 
-@media screen and (min-width: 480px) {
-  .team-member__item {
+@media screen and (max-width: 767.98px) {
+  .team-member__item:not(:last-child) {
     margin-bottom: 30px;
   }
 }
@@ -1405,6 +1419,9 @@ ul {
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .team-member__item {
     margin-right: 30px;
+  }
+  .team-member__item:nth-child(-n+2) {
+    margin-bottom: 30px;
   }
   .team-member__item:nth-child(2n) {
     margin-right: 0;
@@ -1691,6 +1708,9 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  /* @include mq(desktop) {
+    display: block;
+  }*/
 }
 
 @media screen and (max-width: 767.98px) {
@@ -1708,12 +1728,6 @@ ul {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .services-link {
-    display: block;
   }
 }
 
@@ -1742,6 +1756,11 @@ ul {
   }
   .services-item:nth-child(2n) {
     margin-right: 0;
+  }
+  .services-item:last-child {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }
 
@@ -1899,11 +1918,6 @@ footer {
     text-align: left;
     margin-right: 70px;
   }
-}
-
-.footer-logo {
-  display: inline-block;
-  margin-bottom: 20px;
 }
 
 .join-title {

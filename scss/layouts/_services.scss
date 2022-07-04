@@ -2,19 +2,22 @@
 .services {
   list-style: none;
   display: flex;
-  align-items: center;
+
   justify-content: center;
 
   @include mq(mobile-only) {
-      flex-direction: column;
-    }
+    flex-direction: column;
+  }
 
   @include mq(tablet) {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
-    }
+  }
 
+  @include mq(tablet-only) {
+    justify-content: flex-start;
+  }
 }
 
 .services-title {
@@ -34,7 +37,7 @@
   border-bottom: 1px solid var(--main-border-cl);
   border-left: 1px solid var(--main-border-cl);
 
-  @include mq(tablet-only) {
+  @include mq(tablet) {
     flex-grow: 1;
   }
 }
@@ -56,16 +59,12 @@
   display: flex;
 
   @include mq(mobile-only) {
-  flex-direction: column;
-}
-
-  @include mq(tablet-only) {
-  flex-direction: column;
+    flex-direction: column;
   }
 
- /* @include mq(desktop) {
-    display: block;
-  }*/
+  @include mq(tablet) {
+    flex-direction: column;
+  }
 
   &:hover,
   &:focus {
@@ -75,7 +74,6 @@
 }
 
 .services-item {
-  
   @include mq(mobile-only) {
     width: 100%;
 
@@ -85,33 +83,22 @@
   }
 
   @include mq(tablet-only) {
+    display: flex;
     flex-basis: calc((100% - 2 * 30px) / 2);
     margin: 15px;
 
     &:nth-last-child(-n + 2) {
       margin-bottom: 0;
     }
-
-    &:nth-child(2n) {
-      margin-right: 0;
-    }
-
-    &:last-child {
-      justify-content: flex-start;
-    }
   }
 
   @include mq(desktop) {
+    display: flex;
     flex-basis: calc((100% - 3 * 30px) / 3);
-    margin-right: 15px;
-    margin-bottom: 30px;
+    margin: 15px;
 
     &:nth-last-child(-n + 3) {
       margin-bottom: 0;
-    }
-
-    &:nth-child(3n) {
-      margin-right: 0;
     }
   }
 }

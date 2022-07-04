@@ -79,7 +79,6 @@ footer {
   }
 }
 
-
 .join-title {
   font-weight: 700;
   font-size: 14px;
@@ -88,13 +87,16 @@ footer {
   text-transform: uppercase;
   text-decoration: none;
   margin-bottom: 20px;
-  
-  @include mq(mobile) {
-  text-align: center;
+
+  @include mq(mobile-only) {
+    text-align: center;
   }
-   @include mq(desktop) {
-       text-align: left;
-   }
+  @include mq(tablet-only) {
+    text-align: center;
+  }
+  @include mq(desktop) {
+    text-align: left;
+  }
 
   color: var(--white-color);
 }
@@ -112,7 +114,10 @@ footer {
 .container-sign-up {
   width: 100%;
   text-align: center;
-  margin-top: 60px;
+
+  @include mq(tablet) {
+    margin-top: 60px;
+  }
 
   @include mq(desktop) {
     width: auto;
@@ -149,7 +154,7 @@ footer {
 }
 
 .sign-up-input {
-  @include mq(mobile) {
+  @include mq(mobile-only) {
     display: block;
     width: 100%;
     margin-top: 20px;
@@ -160,6 +165,10 @@ footer {
     width: 450px;
     margin-right: auto;
     margin-left: auto;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 
   @include mq(desktop) {
@@ -185,14 +194,12 @@ footer {
 }
 
 .sign-up-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .sign-up-icon {
   margin-left: 10px;
   fill: var(--white-bg-cl);
 }
-
-

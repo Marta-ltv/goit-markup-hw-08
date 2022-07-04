@@ -2,8 +2,11 @@
 
 .header {
   
+  @include mq(mobile-only){
+    width: 100%;
+  }
   @include mq(tablet-only) {
-      height: 85px;
+  height: 85px;
   }
 
   background-color: var(--white-bg-cl);
@@ -12,11 +15,10 @@
 
 .navigation {
   @include mq(mobile-only) {
-    display: none;
+  display: none;
     
   }
 }
-
 
 .navigation__list {
   display: flex;

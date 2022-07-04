@@ -5,17 +5,11 @@
   flex-wrap: wrap;
   justify-content: center;
 
-  @include mq(mobile-only) {
-    margin-right: -15px;
-    margin-left: -15px;
-  }
-
    @include mq(mobile-only) {
     &:nth-last-child(-n+2) {
       margin-bottom: 0;
     }
    }
-
 }
 
 .customers__item {
@@ -91,11 +85,16 @@
   text-align: center;
   letter-spacing: 0.03em;
 
-  @include mq(mobile) {
+  @include mq(mobile-only) {
     font-size: 28px;
     margin-bottom: 30px;
   }
 
+    @include mq(tablet-only) {
+      font-size: 28px;
+      margin-bottom: 30px;
+    }
+    
   @include mq(desktop) {
     font-size: 36px;
     margin-bottom: 50px;

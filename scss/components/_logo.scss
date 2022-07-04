@@ -8,14 +8,17 @@
   font-style: normal;
   text-decoration: none;
 
-  @include mq(mobile) {
+  @include mq(mobile-only) {
     font-size: 24px;
     padding-top: 16px;
     padding-bottom: 16px;
   }
 
   @include mq(tablet-only) {
-   
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
     padding-top: 26px;
     padding-bottom: 26px;
   }
@@ -37,14 +40,14 @@
 }
 
 @include mq(tablet-only) {
-.logo-footer {
-  margin-left: 115px;
-  text-align: center;
-}
+  .logo-footer {
+    margin-left: 115px;
+    text-align: center;
+  }
 }
 
 .footer-logo {
   display: inline-block;
   margin-bottom: 20px;
-
 }
+

@@ -17,7 +17,7 @@
   height: 92px;
 
   @include mq(mobile-only) {
-    flex-basis: calc((100% - 2 * 30px) / 2);
+    flex-basis: calc((100% - 1 * 30px) / 2);
     margin-right: 30px;
 
     &:nth-child(2n) {
@@ -30,7 +30,7 @@
   }
 
   @include mq(tablet-only) {
-    flex-basis: calc((100% - 3 * 30px) / 3);
+    flex-basis: calc((100% - 2 * 30px) / 3);
     margin-right: 30px;
 
     &:nth-child(-n + 3) {

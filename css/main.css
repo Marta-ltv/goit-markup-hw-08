@@ -93,15 +93,14 @@ ul {
 }
 
 .container {
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 0px 15px;
+  margin: 0 auto;
+  width: 100%;
 }
 
-@media screen and (max-width: 767.98px) {
+@media screen and (min-width: 480px) {
   .container {
-    width: 100%;
+    width: 480px;
   }
 }
 
@@ -1217,7 +1216,7 @@ ul {
 }
 
 /*Секція Features*/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .feature__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1228,6 +1227,19 @@ ul {
         -ms-flex-pack: center;
             justify-content: center;
     margin: -15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .feature__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -1247,8 +1259,8 @@ ul {
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .feature__item {
     width: 354px;
-    -ms-flex-preferred-size: calc((100% - 2 * 30px) / 2);
-        flex-basis: calc((100% - 2 * 30px) / 2);
+    -ms-flex-preferred-size: calc((100% - 1 * 30px) / 2);
+        flex-basis: calc((100% - 1 * 30px) / 2);
   }
   .feature__item:nth-child(-n+2) {
     margin-bottom: 30px;
@@ -1261,8 +1273,8 @@ ul {
 @media screen and (min-width: 1200px) {
   .feature__item {
     width: 270px;
-    -ms-flex-preferred-size: calc((100% - 4 * 30px) / 4);
-        flex-basis: calc((100% - 4 * 30px) / 4);
+    -ms-flex-preferred-size: calc((100% - 3 * 30px) / 4);
+        flex-basis: calc((100% - 3 * 30px) / 4);
     margin-right: 30px;
     margin-bottom: 0;
   }
@@ -1545,8 +1557,8 @@ ul {
 
 @media screen and (max-width: 767.98px) {
   .customers__item {
-    -ms-flex-preferred-size: calc((100% - 2 * 30px) / 2);
-        flex-basis: calc((100% - 2 * 30px) / 2);
+    -ms-flex-preferred-size: calc((100% - 1 * 30px) / 2);
+        flex-basis: calc((100% - 1 * 30px) / 2);
     margin-right: 30px;
   }
   .customers__item:nth-child(2n) {
@@ -1559,8 +1571,8 @@ ul {
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .customers__item {
-    -ms-flex-preferred-size: calc((100% - 3 * 30px) / 3);
-        flex-basis: calc((100% - 3 * 30px) / 3);
+    -ms-flex-preferred-size: calc((100% - 2 * 30px) / 3);
+        flex-basis: calc((100% - 2 * 30px) / 3);
     margin-right: 30px;
   }
   .customers__item:nth-child(-n + 3) {
